@@ -1,2 +1,3 @@
-                <a class="text-secondary text-decoration-none fs-4" {{#if prev}}href="{{page_url prev}}"{{/if}}><i class="bi bi-arrow-return-left"></i></a>
-                <a class="text-secondary text-decoration-none fs-4" {{#if next}}href="{{page_url next}}"{{/if}}><i class="bi bi-arrow-return-right"></i></a>
+                <a {{#if prev}}class="text-secondary text-decoration-none fs-4" href="{{page_url prev}}"{{else}}class="text-white text-decoration-none fs-4"{{/if}}><i class="bi bi-arrow-return-left"></i></a>
+                <a class="text-muted text-decoration-none fs-4 md-hide" href="https://www.7ed.net/apis/soup.html" target="_blank"><small>毒°鸡汤：<span id="badsoup">有人一笑就很好看，你是一看就挺好笑。</span></small></a>
+                <a {{#if next}}class="text-secondary text-decoration-none fs-4" href="{{page_url next}}"{{else}}class="text-white text-decoration-none fs-4"{{/if}}><i class="bi bi-arrow-return-right"></i></a>
